@@ -17,20 +17,24 @@
 
         <script type="text/babel">
 
+            
+            function Button() {
+                return (
+                    <button className="bg-purple-500 text-white p-2 rounded">
+                        Botão
+                    </button>
+                )
+              
+
+            }
+
             function App() {
-                return <main className="p-5">
+                return <main className="flex gap-2 p-5">
+                    <Button />
                     <Button />
                     </main>;
             }
 
-            function Button() {
-                return (
-                    <button className="bg-blue-500 text-white p-2 rounded">
-                        Botão
-                    </button>)
-              
-
-            }
 
             ReactDOM.createRoot(document.getElementById('root')).render(
                 <App />
